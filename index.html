@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Library</title>
+    <link rel="stylesheet" type="text/css" href="./stye.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Library</h1>
+
+      <button class="add-book-btn" id="addBookbtn">Add Book</button>
+      <button class="add-book-btn" id="clearBookbtn">Clear all Books</button>
+    </div>
+    <div class="container">
+      <table id="bookTable">
+        <thead>
+          <tr>
+            <th style="width: 30%">Book Title</th>
+            <th style="width: 30%">Author</th>
+            <th style="width: 10%">Pages</th>
+            <th style="width: 30%">Have you Read this Book?</th>
+          </tr>
+        </thead>
+        <tbody>
+         <!--<tr>
+            <td>The Catcher in the Rye</td>
+            <td>J.D. Salinger</td>
+            <td>224</td>
+            <td>Yes</td>--> 
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!--              POP UP        -->
+    <div id="myModal" class="modal">
+      <form id="book_form" class="form_modal">
+        <label for="title">Add Book</label>
+        <span class="close">&times;</span><br /><br />
+
+        <label for="title">Book Title:</label><br />
+        <input type="text" id="title"  /><br /><br />
+        <label for="author">Author:</label><br />
+        <input type="text" id="author"  /><br /><br />
+        <label for="pages">Pages:</label><br />
+        <input type="number" id="pages"  /><br /><br />
+        <label for="read">Have you read this book?:</label><br />
+        <input type="checkbox" id="read" /><br /><br />
+        <div class="button-container">
+          <br />
+          <button type="submit" class="add-book-btn" id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="./modal.js"></script>
+    <script src="./book.js"></script>
+         <script src="./checkInputs.js"></script>
+    <script src="./addBook.js"></script>
+ 
+  </body>
+</html>
